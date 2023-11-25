@@ -12,7 +12,7 @@
                 <div class="col-lg-9">
                     <div class="post-entry d-md-flex small-horizontal mb-5">
                         <div class="me-md-5 thumbnail mb-3 mb-md-0">
-                            <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+                            <img src="{{  asset('frontend_assets/images/img_2.jpg') }}" alt="Image" class="img-fluid">
                         </div>
                         <div class="content">
                             <div class="post-meta mb-3">
@@ -27,7 +27,7 @@
                                 there live the blind texts.</p>
                             <a href="#" class="post-author d-flex align-items-center">
                                 <div class="author-pic">
-                                    <img src="images/person_1.jpg" alt="Image">
+                                    <img src="{{  asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                 </div>
                                 <div class="text">
                                     <strong>Sergy Campbell</strong>
@@ -40,7 +40,7 @@
                 <div class="col-lg-9">
                     <div class="post-entry d-md-flex small-horizontal mb-5">
                         <div class="me-md-5 thumbnail mb-3 mb-md-0">
-                            <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+                            <img src="{{  asset('frontend_assets/images/img_3.jpg') }}" alt="Image" class="img-fluid">
                         </div>
                         <div class="content">
                             <div class="post-meta mb-3">
@@ -55,7 +55,7 @@
                                 there live the blind texts.</p>
                             <a href="#" class="post-author d-flex align-items-center">
                                 <div class="author-pic">
-                                    <img src="images/person_1.jpg" alt="Image">
+                                    <img src="{{  asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                 </div>
                                 <div class="text">
                                     <strong>Sergy Campbell</strong>
@@ -68,7 +68,7 @@
                 <div class="col-lg-9">
                     <div class="post-entry d-md-flex small-horizontal mb-5">
                         <div class="me-md-5 thumbnail mb-3 mb-md-0">
-                            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+                            <img src="{{  asset('frontend_assets/images/img_4.jpg') }}" alt="Image" class="img-fluid">
                         </div>
                         <div class="content">
                             <div class="post-meta mb-3">
@@ -83,7 +83,7 @@
                                 there live the blind texts.</p>
                             <a href="#" class="post-author d-flex align-items-center">
                                 <div class="author-pic">
-                                    <img src="images/person_1.jpg" alt="Image">
+                                    <img src="{{  asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                 </div>
                                 <div class="text">
                                     <strong>Sergy Campbell</strong>

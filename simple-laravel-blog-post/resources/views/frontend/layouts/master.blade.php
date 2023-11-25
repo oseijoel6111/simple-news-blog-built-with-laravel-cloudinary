@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('fonts/icomoon/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/glightbox.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend_assets/fonts/icomoon/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend_assets/fonts/flaticon/font/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend_assets/css/tiny-slider.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend_assets/css/glightbox.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend_assets/css/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend_assets/css/style.css') }}">
     <title>@yield('title')</title>
     <script nonce="b3616e03-596d-403c-ae2b-d207fc081381">
         (function(w, d) {
@@ -104,13 +104,13 @@
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('js/tiny-slider.js') }}"></script>
-    <script src="{{ asset('js/glightbox.min.js') }}"></script>
-    <script src="{{ asset('js/aos.js') }}"></script>
-    <script src="{{ asset('js/navbar.js') }}"></script>
-    <script src="{{ asset('js/counter.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}"></script>
+    <script src="{{ asset('frontend_assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('frontend_assets/js/tiny-slider.js') }}"></script>
+    <script src="{{ asset('frontend_assets/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('frontend_assets/js/aos.js') }}"></script>
+    <script src="{{ asset('frontend_assets/js/navbar.js') }}"></script>
+    <script src="{{ asset('frontend_assets/js/counter.js') }}"></script>
+    <script src="{{ asset('frontend_assets/js/custom.js') }}"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script>

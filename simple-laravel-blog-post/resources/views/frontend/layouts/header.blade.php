@@ -45,7 +45,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="/travel">Travel</a></li>
+                <li><a href="/post">Travel</a></li>
                 <li><a href="/food">Food</a></li>
                 <li><a href="#">Technology</a></li>
                 <li><a href="#">Business</a></li>

@@ -24,6 +24,7 @@ class PostController extends Controller
                 'image' => '',
             ]);
             $post = new Post();
+            $post->category = $request->category;
             $post->title = $request->title;
             $post->slug = Str::slug($request->title);
             $post->description = $request->description;

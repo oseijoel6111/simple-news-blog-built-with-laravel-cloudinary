@@ -15,24 +15,28 @@
                             <div class="post-entry d-lg-flex">
                                 <div class="me-lg-5 thumbnail mb-4 mb-lg-0">
                                     <a href="/single">
-                                        <img src="images/post_lg_1.jpg" alt="Image" class="img-fluid">
+                                        <img src="{{ asset('frontend_assets/images/post_lg_1.jpg') }}" alt="Image" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="content align-self-center">
-                                    <div class="post-meta mb-3">
-                                        <a href="#" class="category">Business</a>, <a href="#"
-                                            class="category">Travel</a> &mdash;
-                                        <span class="date">July 2, 2020</span>
-                                    </div>
-                                    <h2 class="heading"><a href="/single">Your most unhappy customers are your
-                                            greatest source of learning.</a></h2>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in
-                                        Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                                    </p>
+                                    @foreach ($posts as $post)
+                                        <div class="post-meta mb-3">
+                                            <a href="#" class="category">{{ $post->category }}</a>, <a href="#"
+                                                class="category">Travel</a> &mdash;
+                                            <span class="date">{{ \Carbon\Carbon::createFromDate($post->created_at)->format('F d, Y') }}</span>
+                                        </div>
+                                        <h2 class="heading">
+                                            <a href="/single">
+                                                {{ $post->title }}
+                                            </a>
+                                        </h2>
+                                        <p>
+                                            {{ $post->description }}
+                                        </p>
+                                    @endforeach
                                     <a href="#" class="post-author d-flex align-items-center">
                                         <div class="author-pic">
-                                            <img src="images/person_1.jpg" alt="Image">
+                                            <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                         </div>
                                         <div class="text">
                                             <strong>Sergy Campbell</strong>
@@ -47,7 +51,7 @@
                             <div class="post-entry d-lg-flex">
                                 <div class="me-lg-5 thumbnail mb-4 mb-lg-0">
                                     <a href="/single">
-                                        <img src="images/post_lg_2.jpg" alt="Image" class="img-fluid">
+                                        <img src="{{ asset('frontend_assets/images/post_lg_2.jpg') }}" alt="Image" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="content align-self-center">
@@ -64,7 +68,7 @@
                                     </p>
                                     <a href="#" class="post-author d-flex align-items-center">
                                         <div class="author-pic">
-                                            <img src="images/person_1.jpg" alt="Image">
+                                            <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                         </div>
                                         <div class="text">
                                             <strong>Sergy Campbell</strong>
@@ -79,7 +83,7 @@
                             <div class="post-entry d-lg-flex">
                                 <div class="me-lg-5 thumbnail mb-4 mb-lg-0">
                                     <a href="/single">
-                                        <img src="images/post_lg_3.jpg" alt="Image" class="img-fluid">
+                                        <img src="{{ asset('frontend_assets/images/post_lg_3.jpg') }}" alt="Image" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="content align-self-center">
@@ -96,7 +100,7 @@
                                     </p>
                                     <a href="#" class="post-author d-flex align-items-center">
                                         <div class="author-pic">
-                                            <img src="images/person_1.jpg" alt="Image">
+                                            <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                         </div>
                                         <div class="text">
                                             <strong>Sergy Campbell</strong>
@@ -111,7 +115,7 @@
                             <div class="post-entry d-lg-flex">
                                 <div class="me-lg-5 thumbnail mb-4 mb-lg-0">
                                     <a href="/single">
-                                        <img src="images/post_lg_4.jpg" alt="Image" class="img-fluid">
+                                        <img src="{{ asset('frontend_assets/images/post_lg_4.jpg') }}" alt="Image" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="content align-self-center">
@@ -128,7 +132,7 @@
                                     </p>
                                     <a href="#" class="post-author d-flex align-items-center">
                                         <div class="author-pic">
-                                            <img src="images/person_1.jpg" alt="Image">
+                                            <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                         </div>
                                         <div class="text">
                                             <strong>Sergy Campbell</strong>
@@ -152,7 +156,7 @@
                 <div class="post-entry d-block small-post-entry-v">
                     <div class="thumbnail">
                         <a href="/single">
-                            <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+                            <img src="{{ asset('frontend_assets/images/img_2.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                     <div class="content">
@@ -167,7 +171,7 @@
                             there live the blind texts.</p>
                         <a href="#" class="post-author d-flex align-items-center">
                             <div class="author-pic">
-                                <img src="images/person_1.jpg" alt="Image">
+                                <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                             </div>
                             <div class="text">
                                 <strong>Sergy Campbell</strong>
@@ -181,7 +185,7 @@
                 <div class="post-entry d-block small-post-entry-v">
                     <div class="thumbnail">
                         <a href="/single">
-                            <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+                            <img src="{{ asset('frontend_assets/images/img_3.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                     <div class="content">
@@ -196,7 +200,7 @@
                             there live the blind texts.</p>
                         <a href="#" class="post-author d-flex align-items-center">
                             <div class="author-pic">
-                                <img src="images/person_1.jpg" alt="Image">
+                                <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                             </div>
                             <div class="text">
                                 <strong>Sergy Campbell</strong>
@@ -210,7 +214,7 @@
                 <div class="post-entry d-block small-post-entry-v">
                     <div class="thumbnail">
                         <a href="/single">
-                            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+                            <img src="{{ asset('frontend_assets/images/img_4.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                     <div class="content">
@@ -225,7 +229,7 @@
                             there live the blind texts.</p>
                         <a href="#" class="post-author d-flex align-items-center">
                             <div class="author-pic">
-                                <img src="images/person_1.jpg" alt="Image">
+                                <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                             </div>
                             <div class="text">
                                 <strong>Sergy Campbell</strong>
@@ -239,7 +243,7 @@
                 <div class="post-entry d-block small-post-entry-v">
                     <div class="thumbnail">
                         <a href="/single">
-                            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+                            <img src="{{ asset('frontend_assets/images/img_4.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                     <div class="content">
@@ -254,7 +258,7 @@
                             there live the blind texts.</p>
                         <a href="#" class="post-author d-flex align-items-center">
                             <div class="author-pic">
-                                <img src="images/person_1.jpg" alt="Image">
+                                <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                             </div>
                             <div class="text">
                                 <strong>Sergy Campbell</strong>
@@ -268,7 +272,7 @@
                 <div class="post-entry d-block small-post-entry-v">
                     <div class="thumbnail">
                         <a href="/single">
-                            <img src="images/img_5.jpg" alt="Image" class="img-fluid">
+                            <img src="{{ asset('frontend_assets/images/img_5.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                     <div class="content">
@@ -283,7 +287,7 @@
                             there live the blind texts.</p>
                         <a href="#" class="post-author d-flex align-items-center">
                             <div class="author-pic">
-                                <img src="images/person_1.jpg" alt="Image">
+                                <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                             </div>
                             <div class="text">
                                 <strong>Sergy Campbell</strong>
@@ -297,7 +301,7 @@
                 <div class="post-entry d-block small-post-entry-v">
                     <div class="thumbnail">
                         <a href="/single">
-                            <img src="images/img_6.jpg" alt="Image" class="img-fluid">
+                            <img src="{{ asset('frontend_assets/images/img_6.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                     <div class="content">
@@ -312,7 +316,7 @@
                             there live the blind texts.</p>
                         <a href="#" class="post-author d-flex align-items-center">
                             <div class="author-pic">
-                                <img src="images/person_1.jpg" alt="Image">
+                                <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                             </div>
                             <div class="text">
                                 <strong>Sergy Campbell</strong>
@@ -343,7 +347,7 @@
                 <div class="post-entry d-block small-post-entry-v">
                     <div class="thumbnail">
                         <a href="/single">
-                            <img src="images/img_7.jpg" alt="Image" class="img-fluid">
+                            <img src="{{ asset('frontend_assets/images/img_7.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                     <div class="content">
@@ -358,7 +362,7 @@
                             there live the blind texts.</p>
                         <a href="#" class="post-author d-flex align-items-center">
                             <div class="author-pic">
-                                <img src="images/person_1.jpg" alt="Image">
+                                <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                             </div>
                             <div class="text">
                                 <strong>Sergy Campbell</strong>
@@ -372,7 +376,7 @@
                 <div class="post-entry d-block small-post-entry-v">
                     <div class="thumbnail">
                         <a href="/single">
-                            <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+                            <img src="{{ asset('frontend_assets/images/img_2.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                     <div class="content">
@@ -387,7 +391,7 @@
                             there live the blind texts.</p>
                         <a href="#" class="post-author d-flex align-items-center">
                             <div class="author-pic">
-                                <img src="images/person_1.jpg" alt="Image">
+                                <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                             </div>
                             <div class="text">
                                 <strong>Sergy Campbell</strong>
@@ -401,7 +405,7 @@
                 <div class="post-entry d-block small-post-entry-v">
                     <div class="thumbnail">
                         <a href="/single">
-                            <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+                            <img src="{{ asset('frontend_assets/images/img_3.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                     <div class="content">
@@ -416,7 +420,7 @@
                             there live the blind texts.</p>
                         <a href="#" class="post-author d-flex align-items-center">
                             <div class="author-pic">
-                                <img src="images/person_1.jpg" alt="Image">
+                                <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                             </div>
                             <div class="text">
                                 <strong>Sergy Campbell</strong>
@@ -430,7 +434,7 @@
                 <div class="post-entry d-block small-post-entry-v">
                     <div class="thumbnail">
                         <a href="/single">
-                            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+                            <img src="{{ asset('frontend_assets/images/img_4.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                     <div class="content">
@@ -445,7 +449,7 @@
                             there live the blind texts.</p>
                         <a href="#" class="post-author d-flex align-items-center">
                             <div class="author-pic">
-                                <img src="images/person_1.jpg" alt="Image">
+                                <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                             </div>
                             <div class="text">
                                 <strong>Sergy Campbell</strong>
@@ -459,7 +463,7 @@
                 <div class="post-entry d-block small-post-entry-v">
                     <div class="thumbnail">
                         <a href="/single">
-                            <img src="images/img_5.jpg" alt="Image" class="img-fluid">
+                            <img src="{{ asset('frontend_assets/images/img_5.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                     <div class="content">
@@ -474,7 +478,7 @@
                             there live the blind texts.</p>
                         <a href="#" class="post-author d-flex align-items-center">
                             <div class="author-pic">
-                                <img src="images/person_1.jpg" alt="Image">
+                                <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                             </div>
                             <div class="text">
                                 <strong>Sergy Campbell</strong>
@@ -488,7 +492,7 @@
                 <div class="post-entry d-block small-post-entry-v">
                     <div class="thumbnail">
                         <a href="/single">
-                            <img src="images/img_6.jpg" alt="Image" class="img-fluid">
+                            <img src="{{ asset('frontend_assets/images/img_6.jpg') }}" alt="Image" class="img-fluid">
                         </a>
                     </div>
                     <div class="content">
@@ -503,7 +507,7 @@
                             there live the blind texts.</p>
                         <a href="#" class="post-author d-flex align-items-center">
                             <div class="author-pic">
-                                <img src="images/person_1.jpg" alt="Image">
+                                <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                             </div>
                             <div class="text">
                                 <strong>Sergy Campbell</strong>
@@ -529,7 +533,7 @@
                     <div class="col-lg-12">
                         <div class="post-entry d-md-flex xsmall-horizontal mb-5">
                             <div class="me-md-3 thumbnail mb-3 mb-md-0">
-                                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+                                <img src="{{ asset('frontend_assets/images/img_2.jpg') }}" alt="Image" class="img-fluid">
                             </div>
                             <div class="content">
                                 <div class="post-meta mb-1">
@@ -541,7 +545,7 @@
                                         greatest source of learning.</a></h2>
                                 <a href="#" class="post-author d-flex align-items-center">
                                     <div class="author-pic">
-                                        <img src="images/person_1.jpg" alt="Image">
+                                        <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                     </div>
                                     <div class="text">
                                         <strong>Sergy Campbell</strong>
@@ -554,7 +558,7 @@
                     <div class="col-lg-12">
                         <div class="post-entry d-md-flex xsmall-horizontal mb-5">
                             <div class="me-md-3 thumbnail mb-3 mb-md-0">
-                                <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+                                <img src="{{ asset('frontend_assets/images/img_3.jpg') }}" alt="Image" class="img-fluid">
                             </div>
                             <div class="content">
                                 <div class="post-meta mb-1">
@@ -566,7 +570,7 @@
                                         greatest source of learning.</a></h2>
                                 <a href="#" class="post-author d-flex align-items-center">
                                     <div class="author-pic">
-                                        <img src="images/person_1.jpg" alt="Image">
+                                        <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                     </div>
                                     <div class="text">
                                         <strong>Sergy Campbell</strong>
@@ -579,7 +583,7 @@
                     <div class="col-lg-12">
                         <div class="post-entry d-md-flex xsmall-horizontal mb-5">
                             <div class="me-md-3 thumbnail mb-3 mb-md-0">
-                                <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+                                <img src="{{ asset('frontend_assets/images/img_4.jpg') }}" alt="Image" class="img-fluid">
                             </div>
                             <div class="content">
                                 <div class="post-meta mb-1">
@@ -591,7 +595,7 @@
                                         greatest source of learning.</a></h2>
                                 <a href="#" class="post-author d-flex align-items-center">
                                     <div class="author-pic">
-                                        <img src="images/person_1.jpg" alt="Image">
+                                        <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                     </div>
                                     <div class="text">
                                         <strong>Sergy Campbell</strong>
@@ -613,7 +617,7 @@
                     <div class="col-lg-12">
                         <div class="post-entry d-md-flex xsmall-horizontal mb-5">
                             <div class="me-md-3 thumbnail mb-3 mb-md-0">
-                                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+                                <img src="{{ asset('frontend_assets/images/img_2.jpg') }}" alt="Image" class="img-fluid">
                             </div>
                             <div class="content">
                                 <div class="post-meta mb-1">
@@ -625,7 +629,7 @@
                                         greatest source of learning.</a></h2>
                                 <a href="#" class="post-author d-flex align-items-center">
                                     <div class="author-pic">
-                                        <img src="images/person_1.jpg" alt="Image">
+                                        <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                     </div>
                                     <div class="text">
                                         <strong>Sergy Campbell</strong>
@@ -638,7 +642,7 @@
                     <div class="col-lg-12">
                         <div class="post-entry d-md-flex xsmall-horizontal mb-5">
                             <div class="me-md-3 thumbnail mb-3 mb-md-0">
-                                <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+                                <img src="{{ asset('frontend_assets/images/img_3.jpg') }}" alt="Image" class="img-fluid">
                             </div>
                             <div class="content">
                                 <div class="post-meta mb-1">
@@ -650,7 +654,7 @@
                                         greatest source of learning.</a></h2>
                                 <a href="#" class="post-author d-flex align-items-center">
                                     <div class="author-pic">
-                                        <img src="images/person_1.jpg" alt="Image">
+                                        <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                     </div>
                                     <div class="text">
                                         <strong>Sergy Campbell</strong>
@@ -663,7 +667,7 @@
                     <div class="col-lg-12">
                         <div class="post-entry d-md-flex xsmall-horizontal mb-5">
                             <div class="me-md-3 thumbnail mb-3 mb-md-0">
-                                <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+                                <img src="{{ asset('frontend_assets/images/img_4.jpg') }}" alt="Image" class="img-fluid">
                             </div>
                             <div class="content">
                                 <div class="post-meta mb-1">
@@ -675,7 +679,7 @@
                                         greatest source of learning.</a></h2>
                                 <a href="#" class="post-author d-flex align-items-center">
                                     <div class="author-pic">
-                                        <img src="images/person_1.jpg" alt="Image">
+                                        <img src="{{ asset('frontend_assets/images/person_1.jpg') }}" alt="Image">
                                     </div>
                                     <div class="text">
                                         <strong>Sergy Campbell</strong>
@@ -698,6 +702,7 @@
             </div>
         </div>
         <form action class="row">
+            @csrf
             <div class="col-md-8">
                 <div class="mb-3 mb-md-0">
                     <input type="email" class="form-control" placeholder="Enter your email">

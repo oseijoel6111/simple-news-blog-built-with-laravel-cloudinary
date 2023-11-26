@@ -16,6 +16,7 @@ Route::get('/single', [PageController::class, 'single'])->name('single');
 Route::controller(PostController::class)->prefix('posts')->group(function(){
 
     Route::get('/', 'index')->name('posts.index');
+    Route::post('/', 'store')->name('posts.store');
 
 });
 

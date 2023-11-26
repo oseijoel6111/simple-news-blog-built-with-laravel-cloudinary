@@ -5,14 +5,13 @@
     <div class="row gx-0 mt-5">
         <div class="col-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
             <h1 for="" class="text-center">Create Post</h1>
-            <form id="registerForm" method="post" action="" enctype="multipart/form-data">
+            <form id="registerForm" method="post" action="{{route('posts.store')}}" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
-                    <select name="" id="" class="form-control bg-light border-light">
-                        <option value="">A</option>
-                        <option value="">B</option>
-                        <option value="">C</option>
-                        <option value="">D</option>
+                    <select name="category" id="" class="form-control bg-light border-light">
+                        @foreach($categories as $category)
+                        <option value="{{$category->slug}}"> {{$category->name}} </option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="mb-3">

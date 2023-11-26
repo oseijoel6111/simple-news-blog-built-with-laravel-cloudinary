@@ -2,17 +2,29 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
-use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
+use App\Http\Requests\PostRequest;
+use App\Models\Category;
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
+use Exception;
 
 class PostController extends Controller
 {
     public function index()
     {
-        return view('frontend.pages.posts.create');
+        $categories = Category::where('status', 1)->get();
+
+        return view('frontend.pages.posts.create')->with(['categories'=> $categories]);
     }
 
+    public function store(PostRequest $req){
+        try{
+
+
+            
+
+        }catch(Exception $ex){
+            return abort(404);
+        }
+    }
 
 }

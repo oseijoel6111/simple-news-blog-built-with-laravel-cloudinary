@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Http\Controllers;
 
@@ -9,6 +9,7 @@ class PageController extends Controller
     public function index()
     {
         $posts = Post::all();
+        
         return view('frontend.pages.home')->with(['posts'=> $posts]);
     }
 

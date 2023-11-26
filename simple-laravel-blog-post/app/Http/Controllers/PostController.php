@@ -14,7 +14,6 @@ class PostController extends Controller
     public function index()
     {
         $categories = Category::where('status', 1)->get();
-
         return view('frontend.pages.posts.create')->with(['categories' => $categories]);
     }
 

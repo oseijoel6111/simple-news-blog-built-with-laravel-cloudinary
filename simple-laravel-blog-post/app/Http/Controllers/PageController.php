@@ -8,9 +8,7 @@ class PageController extends Controller
 {
     public function index()
     {
-        $posts = Post::all();
-        
-        return view('frontend.pages.home')->with(['posts'=> $posts]);
+        return view('frontend.pages.home');
     }
 
     public function category()

@@ -23,12 +23,12 @@ class PostController extends Controller
                 'description' => ['required'],
                 'image' => '',
             ]);
-            $post = new Post();
-            $post->category = $request->category;
-            $post->title = $request->title;
-            $post->slug = Str::slug($request->title);
-            $post->description = $request->description;
-            $post->save();
+            // $post = new Post();
+            // $post->category = $request->category;
+            // $post->title = $request->title;
+            // $post->slug = Str::slug($request->title);
+            // $post->description = $request->description;
+            // $post->save();
 
             return redirect()->route('home');
         } catch (\Exception $e) {

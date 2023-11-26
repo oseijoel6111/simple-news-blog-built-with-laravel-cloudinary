@@ -9,30 +9,10 @@ use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
-    public function post()
+    public function index()
     {
-        return view("components.post");
+        return view('frontend.pages.posts.create');
     }
 
-    public function store(Request $request)
-    {
-        try {
-            $request->validate([
-                'category' => ['required'],
-                'title' => ['required'],
-                'description' => ['required'],
-                'image' => '',
-            ]);
-            // $post = new Post();
-            // $post->category = $request->category;
-            // $post->title = $request->title;
-            // $post->slug = Str::slug($request->title);
-            // $post->description = $request->description;
-            // $post->save();
 
-            return redirect()->route('home');
-        } catch (\Exception $e) {
-            return $e;
-        }
-    }
 }

@@ -12,5 +12,5 @@ Route::get('/categories', [PageController::class, 'category'])->name('categories
 
 Route::get('/single', [PageController::class, 'single'])->name('single');
 
-Route::get('/post', [PostController::class, 'post'])->name('post');
-Route::post('/post', [PostController::class, 'store'])->name('post.store');
+// Route::get('/post', [PostController::class, 'post'])->name('post');
+// Route::post('/post', [PostController::class, 'store'])->name('post.store');

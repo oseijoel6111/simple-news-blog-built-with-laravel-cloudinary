@@ -1,4 +1,5 @@
 @extends('frontend.layouts.master')
+@section('title', 'HOME')
 @section('content')
     <div class="content-wrapper pad-none">
         <div class="content-inner">
@@ -24,10 +25,10 @@
                                                 <!-- Ministries Content -->
                                                 <div class="event-content">
                                                     <div class="event-title">
-                                                        <h5><a href="event-details.html">Our Sponsorship Meetup
+                                                        <h5><a href="/event-details">Our Sponsorship Meetup
                                                                 Will Be Held Again</a></h5>
                                                     </div>
-                                                    <div class="read-more"><a href="event-details.html">Event
+                                                    <div class="read-more"><a href="/event-details">Event
                                                             Details</a></div>
                                                 </div>
                                             </div>
@@ -50,10 +51,10 @@
                                                 <!-- Ministries Content -->
                                                 <div class="event-content">
                                                     <div class="event-title">
-                                                        <h5><a href="event-details.html">Event: Reflect The
+                                                        <h5><a href="/event-details">Event: Reflect The
                                                                 Community And Serving</a></h5>
                                                     </div>
-                                                    <div class="read-more"><a href="event-details.html">Event
+                                                    <div class="read-more"><a href="/event-details">Event
                                                             Details</a></div>
                                                 </div>
                                             </div>
@@ -76,10 +77,10 @@
                                                 <!-- Ministries Content -->
                                                 <div class="event-content">
                                                     <div class="event-title">
-                                                        <h5><a href="event-details.html">New Families During
+                                                        <h5><a href="/event-details">New Families During
                                                                 National Adoption Month</a></h5>
                                                     </div>
-                                                    <div class="read-more"><a href="event-details.html">Event
+                                                    <div class="read-more"><a href="/event-details">Event
                                                             Details</a></div>
                                                 </div>
                                             </div>
@@ -102,10 +103,10 @@
                                                 <!-- Ministries Content -->
                                                 <div class="event-content">
                                                     <div class="event-title">
-                                                        <h5><a href="event-details.html">Event: Lord is
+                                                        <h5><a href="/event-details">Event: Lord is
                                                                 Sufficient for all of our needs</a></h5>
                                                     </div>
-                                                    <div class="read-more"><a href="event-details.html">Event
+                                                    <div class="read-more"><a href="/event-details">Event
                                                             Details</a></div>
                                                 </div>
                                             </div>
@@ -205,7 +206,7 @@
                                 <!-- Feature Box End -->
                             </div>
                             <div class="button-section margin-top-35">
-                                <a class="btn btn-default" href="about-us.html" title="Learn More">Learn
+                                <a class="btn btn-default" href="/about-us" title="Learn More">Learn
                                     More</a>
                             </div>
                         </div>
@@ -249,7 +250,7 @@
                                             Hampton</span>
                                     </div>
                                     <div class="get-quote-btn">
-                                        <a class="btn btn-default" href="donate-now.html" title="Donate Online">Donate
+                                        <a class="btn btn-default" href="/donate-now" title="Donate Online">Donate
                                             Online</a>
                                     </div>
                                 </div>
@@ -293,7 +294,7 @@
                                         <!-- Ministries Content -->
                                         <div class="ministries-content pad-30">
                                             <div class="ministries-title margin-bottom-15">
-                                                <h4><a href="childrens-ministry.html" class="ministries-link">Children's
+                                                <h4><a href="/childrens-ministry" class="ministries-link">Children's
                                                         Ministry</a></h4>
                                             </div>
                                             <div class="ministries-desc">
@@ -301,7 +302,7 @@
                                                     church. This ministry helps kids learn about the Lord</p>
                                             </div>
                                             <div class="ministries-link margin-top-20">
-                                                <a target="_blank" href="childrens-ministry.html" class="link">Read
+                                                <a target="_blank" href="/childrens-ministry" class="link">Read
                                                     More</a>
                                             </div>
                                         </div>
@@ -323,7 +324,7 @@
                                         <!-- Ministries Content -->
                                         <div class="ministries-content pad-30">
                                             <div class="ministries-title margin-bottom-15">
-                                                <h4><a href="womens-ministry.html" class="ministries-link">Womens
+                                                <h4><a href="/womens-ministry" class="ministries-link">Womens
                                                         Ministry</a></h4>
                                             </div>
                                             <div class="ministries-desc">
@@ -332,7 +333,7 @@
                                                     women’s</p>
                                             </div>
                                             <div class="ministries-link margin-top-20">
-                                                <a target="_blank" href="womens-ministry.html" class="link">Read
+                                                <a target="_blank" href="/womens-ministry" class="link">Read
                                                     More</a>
                                             </div>
                                         </div>
@@ -354,7 +355,7 @@
                                         <!-- Ministries Content -->
                                         <div class="ministries-content pad-30">
                                             <div class="ministries-title margin-bottom-15">
-                                                <h4><a href="global-ministry.html" class="ministries-link">Global
+                                                <h4><a href="/global-ministry" class="ministries-link">Global
                                                         Ministry</a></h4>
                                             </div>
                                             <div class="ministries-desc">
@@ -362,7 +363,7 @@
                                                     Ministries and the opportunity to be</p>
                                             </div>
                                             <div class="ministries-link margin-top-20">
-                                                <a target="_blank" href="global-ministry.html" class="link">Read
+                                                <a target="_blank" href="/global-ministry" class="link">Read
                                                     More</a>
                                             </div>
                                         </div>
@@ -384,7 +385,7 @@
                                         <!-- Ministries Content -->
                                         <div class="ministries-content pad-30">
                                             <div class="ministries-title margin-bottom-15">
-                                                <h4><a href="music-ministry.html" class="ministries-link">Music
+                                                <h4><a href="/music-ministry" class="ministries-link">Music
                                                         Ministry</a></h4>
                                             </div>
                                             <div class="ministries-desc">
@@ -392,7 +393,7 @@
                                                     adulthood. From the pattering sounds from raindrops</p>
                                             </div>
                                             <div class="ministries-link margin-top-20">
-                                                <a target="_blank" href="music-ministry.html" class="link">Read
+                                                <a target="_blank" href="/music-ministry" class="link">Read
                                                     More</a>
                                             </div>
                                         </div>
@@ -471,7 +472,7 @@
                                     </div>
                                 </div>
                                 <div class="button-section margin-top-25">
-                                    <a class="btn btn-default" href="contact-us.html" title="Learn More">Contact
+                                    <a class="btn btn-default" href="/contact-us" title="Learn More">Contact
                                         Us</a>
                                 </div>
                             </div>
@@ -510,7 +511,7 @@
                                                 <div class="top-meta">
                                                     <ul class="top-meta-list">
                                                         <li>
-                                                            <div class="post-date"><a href="blog-single.html"><i
+                                                            <div class="post-date"><a href="/blog-single"><i
                                                                         class="ti-calendar"></i> Oct 21,
                                                                     2019</a></div>
                                                         </li>
@@ -519,13 +520,13 @@
                                             </div>
                                             <div class="blog-details">
                                                 <div class="blog-title">
-                                                    <h4 class="margin-bottom-10"><a href="blog-single.html"
-                                                            class="blog-name">Giving Back – Uganda Training
+                                                    <h4 class="margin-bottom-10"><a href="/blog-single"
+                                                            class="blog-name">Giving Back - Uganda Training
                                                             Centers</a></h4>
                                                 </div>
                                                 <div class="post-desc mt-2">
                                                     <div class="blog-link">
-                                                        <a target="_blank" href="blog-single.html"
+                                                        <a target="_blank" href="/blog-single"
                                                             class="link font-w-500">Read More</a>
                                                     </div>
                                                 </div>
@@ -544,7 +545,7 @@
                                                 <div class="top-meta">
                                                     <ul class="top-meta-list">
                                                         <li>
-                                                            <div class="post-date"><a href="blog-single.html"><i
+                                                            <div class="post-date"><a href="/blog-single"><i
                                                                         class="ti-calendar"></i> Oct 21,
                                                                     2019</a></div>
                                                         </li>
@@ -553,13 +554,13 @@
                                             </div>
                                             <div class="blog-details">
                                                 <div class="blog-title">
-                                                    <h4 class="margin-bottom-10"><a href="blog-single.html"
+                                                    <h4 class="margin-bottom-10"><a href="/blog-single"
                                                             class="blog-name">Spirit Of The Lord Is, From The
                                                             New Life</a></h4>
                                                 </div>
                                                 <div class="post-desc mt-2">
                                                     <div class="blog-link">
-                                                        <a target="_blank" href="blog-single.html"
+                                                        <a target="_blank" href="/blog-single"
                                                             class="link font-w-500">Read More</a>
                                                     </div>
                                                 </div>
@@ -578,7 +579,7 @@
                                                 <div class="top-meta">
                                                     <ul class="top-meta-list">
                                                         <li>
-                                                            <div class="post-date"><a href="blog-single.html"><i
+                                                            <div class="post-date"><a href="/blog-single"><i
                                                                         class="ti-calendar"></i> Oct 20,
                                                                     2019</a></div>
                                                         </li>
@@ -587,13 +588,13 @@
                                             </div>
                                             <div class="blog-details">
                                                 <div class="blog-title">
-                                                    <h4 class="margin-bottom-10"><a href="blog-single.html"
+                                                    <h4 class="margin-bottom-10"><a href="/blog-single"
                                                             class="blog-name">Help End the Water Crisis For
                                                             Families</a></h4>
                                                 </div>
                                                 <div class="post-desc mt-2">
                                                     <div class="blog-link">
-                                                        <a target="_blank" href="blog-single.html"
+                                                        <a target="_blank" href="/blog-single"
                                                             class="link font-w-500">Read More</a>
                                                     </div>
                                                 </div>
@@ -612,7 +613,7 @@
                                                 <div class="top-meta">
                                                     <ul class="top-meta-list">
                                                         <li>
-                                                            <div class="post-date"><a href="blog-single.html"><i
+                                                            <div class="post-date"><a href="/blog-single"><i
                                                                         class="ti-calendar"></i> Oct 19,
                                                                     2019</a></div>
                                                         </li>
@@ -621,13 +622,13 @@
                                             </div>
                                             <div class="blog-details">
                                                 <div class="blog-title">
-                                                    <h4 class="margin-bottom-10"><a href="blog-single.html"
-                                                            class="blog-name">Pray for Help to Save Mattia’s
+                                                    <h4 class="margin-bottom-10"><a href="/blog-single"
+                                                            class="blog-name">Pray for Help to Save Mattia's
                                                             Life</a></h4>
                                                 </div>
                                                 <div class="post-desc mt-2">
                                                     <div class="blog-link">
-                                                        <a target="_blank" href="blog-single.html"
+                                                        <a target="_blank" href="/blog-single"
                                                             class="link font-w-500">Read More</a>
                                                     </div>
                                                 </div>

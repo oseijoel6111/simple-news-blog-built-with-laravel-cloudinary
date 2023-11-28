@@ -55,8 +55,11 @@
                             <a href="#" class="social-dribble"><span class="ti-dribbble"></span></a>
                         </div>
                     </li>
-                    <li><a href="#" class="full-view-switch text-center"><i
-                                class="ti-search typo-white"></i></a></li>
+                    <li>
+                        <a href="#" class="full-view-switch text-center">
+                            <i class="ti-search typo-white"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <!--Search-->
@@ -99,7 +102,7 @@
                                         </li>
                                         <li class="dropdown dropdown-sub"><a href="#">Pages</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li><a href="/about-us">About Us</a></li>
                                                 <li class="dropdown"><a href="events.html">Events</a>
                                                     <ul class="dropdown-menu child-dropdown-menu">
                                                         <li><a href="events.html">Events Default</a></li>
@@ -148,7 +151,7 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown dropdown-sub"><a href="sermons.html">Sermons</a>
+                                        <li class="dropdown dropdown-sub"><a href="/sermons">Sermons</a>
                                             <ul class="dropdown-menu">
                                                 <li class="dropdown">
                                                     <a href="sermons-grid.html">Sermons Grid</a>
@@ -162,7 +165,7 @@
                                                     </ul>
                                                 </li>
                                                 <li class="dropdown">
-                                                    <a href="sermons.html">Sermon List</a>
+                                                    <a href="/sermons">Sermon List</a>
                                                     <ul class="dropdown-menu">
                                                         <li><a href="sermons-list-left-sidebar.html">Sermons
                                                                 List Left Sidebar</a></li>
@@ -171,12 +174,12 @@
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="sermon-details.html">Sermon Details</a>
+                                                    <a href="/sermon-details">Sermon Details</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown mega-dropdown dropdown-sub relative"><a
-                                                href="ministries-grid-2.html">Ministries</a>
+                                                href="/ministries-grid-2">Ministries</a>
                                             <ul class="dropdown-menu mega-dropdown-menu dropdown-col-2">
                                                 <li class="mega-dropdown-col"><a href="#"
                                                         class="text-uppercase theme-color">Ministry
@@ -212,9 +215,9 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown dropdown-sub"><a href="blog.html">Blog</a>
+                                        <li class="dropdown dropdown-sub"><a href="/blog">Blog</a>
                                             <ul class="dropdown-menu">
-                                                <li class="dropdown"><a href="blog.html">Blog Grid</a>
+                                                <li class="dropdown"><a href="/blog">Blog Grid</a>
                                                     <ul class="dropdown-menu">
                                                         <li><a href="blog-grid-right-sidebar.html">Blog Grid
                                                                 2</a></li>
@@ -241,16 +244,16 @@
                                                                 Masonry + Right Sidebar</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="blog-single.html">Blog Single</a></li>
+                                                <li><a href="/blog-single">Blog Single</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="/contact-us">Contact Us</a></li>
                                     </ul>
                                 </li>
                                 <!--List Item End-->
                                 <!--List Item-->
                                 <li class="list-item">
-                                    <div class="header-navbar-text-1"><a href="donate-now.html"
+                                    <div class="header-navbar-text-1"><a href="/donate-now"
                                             class="h-donate-btn">Donate</a></div>
                                 </li>
                                 <!--List Item End-->
